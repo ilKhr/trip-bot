@@ -89,7 +89,7 @@ const personalInfo = new Scenes.WizardScene(
 		return ctx.wizard.next();
 	},
 	async ctx => {
-		if (ctx.message.text.trim() === 'Да') {
+		if (ctx.message.text.trim() === 'Да, сделать бронирование') {
 			await ctx.telegram.sendMessage(
 				process.env.ADMIN_ID,
 				`Тур:${ctx.session.trip.name}\nФИО:${ctx.wizard.state.fio}\nДень рождения:${ctx.wizard.state.birthday}\nНомер телефона:${ctx.wizard.state.phone}`
