@@ -9,7 +9,7 @@ const menus = {
 	howTown: Markup.keyboard(['Экскурсия', 'Прогулка', 'В меню']),
 	howHills: Markup.keyboard(['Пешком', 'На авто', 'В меню']),
 	confirm: Markup.keyboard(['Забронировать', 'Назад']),
-	yesNo: Markup.keyboard(['Да', 'Нет']),
+	yesNo: Markup.keyboard(['Да, забронировать место', 'Нет']),
 };
 
 const searcher = new Scenes.BaseScene('search');
