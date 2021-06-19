@@ -2,7 +2,7 @@ require('dotenv').config();
 const { Telegraf, Markup, session, Scenes } = require('telegraf');
 const { faq, contacts, trips } = require('./config');
 
-const menus = {
+const menus = { 
 	main: Markup.keyboard(['Поиск туров', 'ЧаВо', 'Выбрать тур', 'Контакты'], { columns: 2 }),
 	back: Markup.keyboard(['В меню']),
 	where: Markup.keyboard(['Город', 'Море', 'Горы', 'В меню']),
